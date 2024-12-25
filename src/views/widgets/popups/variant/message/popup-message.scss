@@ -8,7 +8,7 @@ $parent: "popup-message";
   align-items: center;
   width: rem(270);
   padding: rem(24);
-  background-color: var(--color-green-300);
+  background-color: #212C24;
 
   @include min-media('t') {
     width: rem(333);
@@ -16,13 +16,13 @@ $parent: "popup-message";
 
   @include element($parent, 'title') {
     margin-bottom: rem(15);
-    color: var(--color-beige-100);
+    color: white;
     text-align: center;
   }
 
   @include element($parent, 'description') {
     margin-bottom: rem(20);
-    color: var(--color-beige-100-70);
+    color: white;
     text-align: center;
   }
 

@@ -27,7 +27,7 @@
   </head>
   <body class="body{% if bodyClass %} {{ bodyClass }}{% endif %}">
     {% block header %}
-      {% include "@root/widgets/header/index.twig" with { data: header, class: headerClass } only %}
+      шапка
     {% endblock %}
 
     <main class="main">
@@ -37,7 +37,7 @@
     </main>
 
     {% block footer %}
-      {% include "@root/widgets/footer/index.twig" with { data: footer } only %}
+      футер
     {% endblock %}
 
     <div id="popups"></div>

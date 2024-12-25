@@ -6,6 +6,7 @@
   /** fonts **/
   --font: "manrope", system-ui, sans-serif;
 
+  --header-index: 20;
   --container-padding: #{rem(16)};
 
   @include min-media('t') {

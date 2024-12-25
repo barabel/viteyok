@@ -3,3 +3,6 @@
 @use "/src/assets/styles/fonts.scss";
 @use "/src/assets/styles/reset.scss";
 @use "/src/assets/styles/variables.scss";
+
+@use "/src/views/shared/lib/scroll/custom/scroll-custom.scss";
+@use "/src/views/shared/lib/animations/animations.scss";

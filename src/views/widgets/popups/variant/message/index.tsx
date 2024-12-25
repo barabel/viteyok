@@ -42,7 +42,6 @@ const PopupMessage: TPopupChild<TPopupMessage> = ({
       )}
       <ReactButton
         className={classes.closeButton}
-        variant='bordered-beige'
         title={button?.title ?? ''}
         onClick={closePopup}
       />
