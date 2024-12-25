@@ -1,0 +1,255 @@
+{
+  "found": "30 вариантов",
+  "total": 30,
+  "items": [
+    {
+      "number": "9",
+      "room": "0",
+      "square": "26,7",
+      "corps": "3",
+      "floor": "2",
+      "price": "9,12 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "10",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на лес"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      }
+    },
+    {
+      "number": "11",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "т"
+        },
+        {
+          "title": "Вид"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "12",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на "
+        },
+        {
+          "title": "Умный дом"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "13",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на лес"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "14",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на лес"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "15",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на лес"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    },
+    {
+      "number": "16",
+      "room": "3",
+      "square": "69,2",
+      "corps": "3",
+      "floor": "2",
+      "price": "19,08 млн ₽",
+      "image": {
+        "src": "/images/genplan-flat/schema-1.png",
+        "alt": ""
+      },
+      "tags": [
+        {
+          "title": "терраса"
+        },
+        {
+          "title": "Вид на лес"
+        },
+        {
+          "title": "Умный дом"
+        },
+        {
+          "title": "балкон"
+        },
+        {
+          "title": "вид на город"
+        }
+      ],
+      "button": {
+        "title": "Узнать подробнее",
+        "url": "/"
+      },
+      "url": "/"
+    }
+  ]
+}

@@ -1,0 +1,828 @@
+{
+  "breadcrumbs": [
+    {
+      "url": "/",
+      "title": "Главная"
+    },
+    {
+      "title": "Квартиры по параметрам"
+    },
+    {
+      "title": "3 к, 69,2 м² "
+    }
+  ],
+  "flat": {
+    "title": "3 к, 69,2 м² ",
+    "pdf": {
+      "title": "Скачать презентацию",
+      "url": "/"
+    },
+    "angle": 30,
+    "corps": {
+      "1": {
+        "url": "/1"
+      },
+      "2": {
+        "active": true
+      },
+      "3": {
+        "url": "/3"
+      },
+      "4": {
+        "url": "/4"
+      }
+    },
+    "tabs": [
+      {
+        "type": "arrangement",
+        "title": "с мебелью",
+        "selected": true,
+        "data": {
+          "toggler": {
+            "title": "альтернативная расстановка"
+          },
+          "items": [
+            {
+              "src": "/images/detail-flat/scheme-1.png",
+              "alt": ""
+            },
+            {
+              "src": "/images/detail-flat/scheme-2.png",
+              "alt": ""
+            },
+            {
+              "src": "/images/detail-flat/scheme-1.png",
+              "alt": ""
+            },
+            {
+              "src": "/images/detail-flat/scheme-1.png",
+              "alt": ""
+            },
+            {
+              "src": "/images/detail-flat/scheme-1.png",
+              "alt": ""
+            },
+            {
+              "src": "/images/detail-flat/scheme-1.png",
+              "alt": ""
+            }
+          ],
+          "sun": {
+            "from": "07:10",
+            "to": "19:10",
+            "step": 5
+          }
+        }
+      },
+      {
+        "type": "sizes",
+        "title": "с размерами",
+        "data": {
+          "image": {
+            "src": "/images/detail-flat/scheme-2.png",
+            "alt": "/"
+          },
+          "sun": {
+            "from": "07:10",
+            "to": "19:10",
+            "step": 5
+          }
+        }
+      },
+      {
+        "type": "floor",
+        "title": "на этаже",
+        "data": {
+          "background": {
+            "width": 1484,
+            "height": 559,
+            "src": "/images/genplan-flat/background.png",
+            "alt": "bg"
+          },
+          "items": [
+            {
+              "points": "2,166 2,33 30,34 30,1 233,1 229,197 28,196 29,167",
+              "color": "#6C7E2566",
+              "label": {
+                "x": "12.2",
+                "y": "17.53",
+                "items": [
+                  "3к",
+                  "69,25 м²"
+                ]
+              }
+            },
+            {
+              "points": "221,337 222,158 297,159 296,186 367,187 362,357 324,358 325,335",
+              "color": "#63706066"
+            },
+            {
+              "points": "774,337 773,158 840,159 840,187 928,187 925,358 888,358 887,337",
+              "color": "#63706066"
+            }
+          ],
+          "scrollIndicator": {
+            "title": "скролл"
+          }
+        }
+      }
+    ],
+    "chars": [
+      {
+        "title": "Квартира",
+        "value": "№ 3"
+      },
+      {
+        "title": "Этаж",
+        "value": "2"
+      },
+      {
+        "title": "Комнат",
+        "value": "3"
+      },
+      {
+        "title": "Площадь",
+        "value": "69,2 м²"
+      },
+      {
+        "title": "Планировка",
+        "value": "Классика"
+      }
+    ],
+    "tags": [
+      {
+        "title": "терраса"
+      },
+      {
+        "title": "Вид на лес"
+      },
+      {
+        "title": "Умный дом"
+      },
+      {
+        "title": "балкон"
+      },
+      {
+        "title": "вид на город"
+      }
+    ],
+    "price": {
+      "current": "19 084 152",
+      "old": "19 458 000",
+      "discount": "-5%"
+    },
+    "callback": {
+      "title": "Оставить заявку",
+      "callback": {
+        "title": "Заполните форму, чтобы менеджер смог ответить на ваши вопросы",
+        "description": "Мы перезвоним вам через 10 минут",
+        "image": {
+          "src": "/images/callback/background.png",
+          "alt": "/"
+        },
+        "form": {
+          "action": "api/form/callback",
+          "inputs": [
+            {
+              "type": "input",
+              "name": "name",
+              "placeholder": "Ваше имя*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            },
+            {
+              "type": "phone",
+              "name": "phone",
+              "placeholder": "+7 (__)__-__-__*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения",
+                "regexFail": "Ошибка заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            }
+          ],
+          "politics": {
+            "text": "Нажимая на кнопку «Отправить», вы соглашаетесь",
+            "link": {
+              "url": "/politics.html",
+              "title": "с политикой конфиденциальности"
+            }
+          },
+          "button": "Отправить"
+        }
+      }
+    },
+    "phone": "12312545"
+  },
+  "scrollToButton": {
+    "title": "Калькулятор ипотеки",
+    "scrollToId": "mortgageBlock"
+  },
+  "mortgage": {
+    "id": "mortgageBlock",
+    "title": "калькулятор ипотеки",
+    "action": "/api/mortgage/cards",
+    "totalAction": "/api/mortgage/cards-total",
+    "filterButton": {
+      "title": "Фильтры ипотеки"
+    },
+    "mortgage": {
+      "labels": {
+        "select": "Программа",
+        "price": "Цена квартиры, ₽",
+        "initial": "Первоначальный взнос, ₽",
+        "term": "Срок кредита, лет"
+      },
+      "types": [
+        {
+          "selected": true,
+          "title": "Стандартная ипотека",
+          "value": "standard",
+          "price": {
+            "min": 2000000,
+            "max": 40000000
+          },
+          "term": {
+            "min": 1,
+            "max": 15
+          },
+          "initialPercent": 0.2
+        },
+        {
+          "title": "Льготная ипотека",
+          "value": "preferential",
+          "price": {
+            "min": 3000000,
+            "max": 30000000
+          },
+          "term": {
+            "min": 1,
+            "max": 30
+          },
+          "initialPercent": 0
+        },
+        {
+          "title": "Семейная ипотека",
+          "value": "family",
+          "price": {
+            "min": 4000000,
+            "max": 20000000
+          },
+          "term": {
+            "min": 5,
+            "max": 20
+          },
+          "initialPercent": 0.5
+        },
+        {
+          "title": "Субсидированная ипотека",
+          "value": "subsidy",
+          "price": {
+            "min": 5000000,
+            "max": 11000000
+          },
+          "term": {
+            "min": 1,
+            "max": 6
+          },
+          "initialPercent": 0.2
+        },
+        {
+          "title": "IT ипотека",
+          "value": "it",
+          "price": {
+            "min": 6000000,
+            "max": 50000000
+          },
+          "term": {
+            "min": 1,
+            "max": 30
+          },
+          "initialPercent": 0.6
+        }
+      ],
+      "popup": {
+        "title": "Фильтры ипотеки"
+      },
+      "resetButton": {
+        "title": "Сбросить"
+      },
+      "submitButton": {
+        "title": "Показать"
+      }
+    },
+    "sorting": {
+      "name": "sortBy",
+      "options": [
+        {
+          "title": "По возрастанию цены",
+          "value": "priceAsc"
+        },
+        {
+          "title": "По убыванию цены",
+          "value": "priceDesc"
+        },
+        {
+          "title": "По возрастанию площади",
+          "value": "areaAsc",
+          "selected": true
+        },
+        {
+          "title": "По убыванию площади",
+          "value": "areaDesc"
+        }
+      ]
+    },
+    "list": {
+      "found": "25 вариантов",
+      "total": 25,
+      "groupBy": 4,
+      "callbackForm": {
+        "title": "Связаться с менеджером для получения ипотеки",
+        "description": "Мы перезвоним вам через 10 минут",
+        "form": {
+          "action": "api/form/callback",
+          "inputs": [
+            {
+              "type": "input",
+              "name": "name",
+              "placeholder": "Ваше имя*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            },
+            {
+              "type": "phone",
+              "name": "phone",
+              "placeholder": "+7 (__)__-__-__*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения",
+                "regexFail": "Ошибка заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            }
+          ],
+          "politics": {
+            "text": "Нажимая на кнопку «Отправить», вы соглашаетесь",
+            "link": {
+              "url": "/politics.html",
+              "title": "с политикой конфиденциальности"
+            }
+          },
+          "button": "Отправить"
+        }
+      },
+      "items": [
+        {
+          "bank": {
+            "title": "ВТБ",
+            "image": {
+              "src": "/images/detail-flat/mortgage/vtb.png",
+              "alt": "/"
+            }
+          },
+          "tag": {
+            "title": "Стандартная"
+          },
+          "items": [
+            {
+              "title": "Ставка",
+              "value": "18%"
+            },
+            {
+              "title": "Перв. взнос",
+              "value": "1 000 000 ₽"
+            },
+            {
+              "title": "Срок ипотеки",
+              "value": "30 лет"
+            }
+          ],
+          "price": "134 867 ₽/мес",
+          "button": {
+            "title": "Заявка"
+          }
+        },
+        {
+          "bank": {
+            "title": "Альфа Банк",
+            "image": {
+              "src": "/images/detail-flat/mortgage/alfa.png",
+              "alt": "/"
+            }
+          },
+          "tag": {
+            "title": "Стандартная"
+          },
+          "items": [
+            {
+              "title": "Ставка",
+              "value": "18%"
+            },
+            {
+              "title": "Перв. взнос",
+              "value": "1 000 000 ₽"
+            },
+            {
+              "title": "Срок ипотеки",
+              "value": "30 лет"
+            }
+          ],
+          "price": "134 867 ₽/мес",
+          "button": {
+            "title": "Заявка"
+          }
+        },
+        {
+          "bank": {
+            "title": "Дом РФ",
+            "image": {
+              "src": "/images/detail-flat/mortgage/domrf.png",
+              "alt": "/"
+            }
+          },
+          "tag": {
+            "title": "Стандартная"
+          },
+          "items": [
+            {
+              "title": "Ставка",
+              "value": "18%"
+            },
+            {
+              "title": "Перв. взнос",
+              "value": "1 000 000 ₽"
+            },
+            {
+              "title": "Срок ипотеки",
+              "value": "30 лет"
+            }
+          ],
+          "price": "134 867 ₽/мес",
+          "button": {
+            "title": "Заявка"
+          }
+        },
+        {
+          "bank": {
+            "title": "Совкомбанк",
+            "image": {
+              "src": "/images/detail-flat/mortgage/sov.png",
+              "alt": "/"
+            }
+          },
+          "tag": {
+            "title": "Стандартная"
+          },
+          "items": [
+            {
+              "title": "Ставка",
+              "value": "18%"
+            },
+            {
+              "title": "Перв. взнос",
+              "value": "1 000 000 ₽"
+            },
+            {
+              "title": "Срок ипотеки",
+              "value": "30 лет"
+            }
+          ],
+          "price": "134 867 ₽/мес",
+          "button": {
+            "title": "Заявка"
+          }
+        }
+      ],
+      "button": {
+        "title": "Показать еще"
+      }
+    }
+  },
+  "similar": {
+    "title": "Похожие квартиры",
+    "filterAction": "api/catalog/flats",
+    "list": {
+      "total": 25,
+      "groupBy": 6,
+      "headers": {
+        "image": "Планировка",
+        "number": "№",
+        "type": "Тип",
+        "square": "Площадь",
+        "corps": "Корпус",
+        "floor": "Этаж",
+        "price": "Стоимость"
+      },
+      "items": [
+        {
+          "number": "1",
+          "room": "0",
+          "square": "26,7",
+          "corps": "3",
+          "floor": "2",
+          "price": "9,12 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на лес"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          }
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "т"
+            },
+            {
+              "title": "Вид"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на "
+            },
+            {
+              "title": "Умный дом"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на лес"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на лес"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на лес"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        },
+        {
+          "number": "2",
+          "room": "3",
+          "square": "69,2",
+          "corps": "3",
+          "floor": "2",
+          "price": "19,08 млн ₽",
+          "image": {
+            "src": "/images/genplan-flat/schema-1.png",
+            "alt": ""
+          },
+          "tags": [
+            {
+              "title": "терраса"
+            },
+            {
+              "title": "Вид на лес"
+            },
+            {
+              "title": "Умный дом"
+            },
+            {
+              "title": "балкон"
+            },
+            {
+              "title": "вид на город"
+            }
+          ],
+          "button": {
+            "title": "Узнать подробнее",
+            "url": "/"
+          },
+          "url": "/"
+        }
+      ],
+      "button": {
+        "title": "Показать еще"
+      }
+    }
+  },
+  "callback": {
+    "title": "Заполните форму, чтобы менеджер смог ответить на ваши вопросы",
+    "description": "Мы перезвоним вам через 10 минут",
+    "image": {
+      "src": "/images/callback/background.png",
+      "alt": "/"
+    },
+    "form": {
+      "action": "api/form/callback",
+      "inputs": [
+        {
+          "type": "input",
+          "name": "name",
+          "placeholder": "Ваше имя*",
+          "errorMessages": {
+            "required": "Поле обязательно для заполнения"
+          },
+          "rules": {
+            "required": true
+          }
+        },
+        {
+          "type": "phone",
+          "name": "phone",
+          "placeholder": "+7 (__)__-__-__*",
+          "errorMessages": {
+            "required": "Поле обязательно для заполнения",
+            "regexFail": "Ошибка заполнения"
+          },
+          "rules": {
+            "required": true
+          }
+        }
+      ],
+      "politics": {
+        "text": "Нажимая на кнопку «Отправить», вы соглашаетесь",
+        "link": {
+          "url": "/politics.html",
+          "title": "с политикой конфиденциальности"
+        }
+      },
+      "button": "Отправить"
+    }
+  }
+}

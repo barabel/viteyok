@@ -1,0 +1,35 @@
+ <{{ data.url ? 'a' : 'button' }}
+  class="button-round t3 {{class}} {% if icon or data.src %} button-round--icon{% endif %}"
+  {% if data.url %} href="{{data.url}}"{% endif %}
+  {% if '//' in data.url %} target="_blank"{% endif %}
+  {{attributes}}
+>
+  <span class="button-round__wrapper">
+    <span class="button-round__content">
+      {{ data.title }}
+      {% if icon %}
+        <div class="button-round__wrapper-icon">
+          <svg class="button-round__icon">
+            <use xlink:href="/sprite.svg#{{ icon }}"></use>
+          </svg>
+        </div>
+      {% endif %}
+      {% if data.src %}
+        <img class="button-round__icon" src="{{ data.src }}" alt="{{ data.alt ?? 'icon' }}" />
+      {% endif %}
+    </span>
+    <span class="button-round__content">
+      {{ data.title }}
+      {% if icon %}
+        <div class="button-round__wrapper-icon">
+          <svg class="button-round__icon">
+            <use xlink:href="/sprite.svg#{{ icon }}"></use>
+          </svg>
+        </div>
+      {% endif %}
+      {% if data.src %}
+        <img class="button-round__icon" src="{{ data.src }}" alt="{{ data.alt ?? 'icon' }}" />
+      {% endif %}
+    </span>
+  </span>
+</{{ data.url ? 'a' : 'button' }}>

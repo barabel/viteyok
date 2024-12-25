@@ -1,0 +1,16 @@
+<{{ data.url ? 'a' : 'button-tag' }}
+  class="button-tag h7 {{ class }}"
+  {% if data.url %} href="{{ data.url }}" {% endif %}
+  {% if "//" in data.url %} target="_blank"{% endif %}
+  {{ attributes }}
+>
+  <span class="button-tag__attention"></span>
+  <span class="button-tag__wrapper">
+    <span class="button-tag__content">
+      <span class="button-tag__title">{{ data.title }}</span>
+    </span>
+    <span class="button-tag__content">
+      <span class="button-tag__title">{{ data.title }}</span>
+    </span>
+  </span>
+</{{ data.url ? 'a' : 'button-tag' }}>

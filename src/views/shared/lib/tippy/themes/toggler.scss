@@ -1,0 +1,30 @@
+@use '~/src/assets/styles/lib/index.scss' as *;
+
+.tippy-box[data-theme~=toggler] {
+  border-radius: rem(8);
+  box-shadow: 0px 4px rem(24) 0px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  color: #000;
+  padding: rem(10) rem(16);
+  text-align: center;
+}
+
+.tippy-box[data-theme~="toggler"][data-placement^="top"] > .tippy-arrow:before {
+  border-top-color: #fff;
+}
+.tippy-box[data-theme~="toggler"][data-placement^="bottom"]
+  > .tippy-arrow:before {
+  border-bottom-color: #fff;
+}
+.tippy-box[data-theme~="toggler"][data-placement^="left"] > .tippy-arrow:before {
+  border-left-color: #fff;
+}
+.tippy-box[data-theme~="toggler"][data-placement^="right"] > .tippy-arrow:before {
+  border-right-color: #fff;
+}
+.tippy-box[data-theme~="toggler"] > .tippy-backdrop {
+  background-color: #fff;
+}
+.tippy-box[data-theme~="toggler"] > .tippy-svg-arrow {
+  fill: #fff;
+}

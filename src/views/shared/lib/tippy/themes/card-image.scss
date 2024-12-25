@@ -1,0 +1,18 @@
+@use '~/src/assets/styles/lib/index.scss' as *;
+
+.tippy-box[data-theme~="cardImage"] {
+  border: 2px solid var(--color-green-200);
+  color: var(--color-green-200);
+  border-radius: 0;
+  box-shadow: rem(15) rem(5) rem(30) 0px rgba(0, 0, 0, 0.09);
+  background-color: var(--color-beige-100);
+
+  .tippy-content {
+    padding: rem(20);
+  }
+}
+
+.tippy-box[data-theme~="cardImage"] > .tippy-backdrop {
+  background-color: var(--color-beige-100);
+}
+

@@ -1,0 +1,117 @@
+@use '~/src/assets/styles/lib/index.scss' as *;;
+
+$parent: "react-link";
+
+@include block($parent) {
+  --color: var(--color-grey-500);
+  --color-hover: var(--color-grey-500);
+  --color-disabled: var(--color-grey-500-30);
+  --underline-color: var(--color-grey-500);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0;
+  border: none;
+  color: var(--color);
+  background-color: transparent;
+  transition: color 0.3s;
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      color: var(--color-hover);
+
+      @include element($parent, 'icon') {
+        fill: var(--color-hover);
+        stroke: var(--color-hover);
+      }
+    }
+  }
+
+  @include element($parent, "wrapper") {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  @include element($parent, "icon") {
+    width: rem(16);
+    height: rem(16);
+    fill: var(--color);
+    stroke: var(--color);
+    transition: fill 0.3s, stroke 0.3s;
+  }
+
+  @include modifier($parent, 'disabled') {
+    color: var(--color-disabled);
+    cursor: auto;
+  }
+
+  @include modifier($parent, 'light') {
+    --color: var(--color-biege-100);
+    --color-hover: var(--color-biege-100);
+    --underline-color: var(--color-biege-100);
+  }
+
+  @include modifier($parent, 'bordered') {
+    position: relative;
+    padding-bottom: rem(5);
+
+    &:not(:disabled)::after {
+      content: "";
+      transition: 0.3s transform;
+      border-bottom: 1px solid var(--color);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+
+    @media (hover: hover) {
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  @include modifier($parent, 'underline') {
+    position: relative;
+
+    &::before {
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: var(--color-grey-500);
+      transition: width 0.3s;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-grey-500-30);
+      z-index: 1;
+      transition: width 0.3s;
+    }
+
+    @media (hover: hover) {
+      padding-bottom: 4px;
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

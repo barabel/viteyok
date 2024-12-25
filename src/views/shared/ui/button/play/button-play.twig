@@ -1,0 +1,7 @@
+ <{{ data.url ? 'a' : 'button' }}
+  class="button-play {{class}}"
+  {% if data.url %} href="{{data.url}}"{% endif %}
+  {% if '//' in data.url %} target="_blank"{% endif %}
+  {{attributes}}
+>
+</{{ data.url ? 'a' : 'button' }}>

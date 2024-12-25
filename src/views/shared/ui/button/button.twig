@@ -1,0 +1,32 @@
+<{{ data.url ? 'a' : 'button' }}
+  class="button t1 {% if isOnline %}button--online{% endif %} {{ class }}"
+  {% if data.url %} href="{{ data.url }}" {% endif %}
+  {% if "//" in data.url %} target="_blank"{% endif %}
+  {{ attributes }}
+>
+  <span class="button__wrapper">
+    <span class="button__content">
+      <span class="button__title">{{ data.title }}</span>
+      {% if icon %}
+        <div class="button__wrapper-icon">
+          <svg class="button__icon">
+            <use xlink:href="/sprite.svg#{{ icon }}"></use>
+          </svg>
+        </div>
+      {% endif %}
+    </span>
+    <span class="button__content">
+      <span class="button__title">{{ data.title }}</span>
+      {% if icon %}
+        <div class="button__wrapper-icon">
+          <svg class="button__icon">
+            <use xlink:href="/sprite.svg#{{ icon }}"></use>
+          </svg>
+        </div>
+      {% endif %}
+    </span>
+  </span>
+  {% if isOnline %}
+    <span class="button__online"></span>
+  {% endif %}
+</{{ data.url ? 'a' : 'button' }}>

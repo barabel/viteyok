@@ -1,0 +1,73 @@
+{
+  "total": 21,
+  "items": [
+    {
+      "image": {
+        "src": "/images/gallery/image-1.jpg",
+        "alt": ""
+      },
+      "date": {
+        "day": "09.10",
+        "year": "2024"
+      },
+      "title": "На территории жилого комплекса открывается детский сад — радостное событие для всех жильцов",
+      "url": "/detail-news.html"
+    },
+    {
+      "image": {
+        "src": "/images/values/image-2.jpg",
+        "alt": ""
+      },
+      "date": {
+        "day": "04.10",
+        "year": "2024"
+      },
+      "title": "С радостью сообщаем о сдаче второго корпуса в нашем жилом комплексе!",
+      "url": "/detail-news.html"
+    },
+    {
+      "date": {
+        "day": "29.09",
+        "year": "2024"
+      },
+      "title": "Современный спортивного комплекса на территории дома",
+      "url": "/detail-news.html"
+    },
+    {
+      "image": {
+        "src": "/images/values/image-3.jpg",
+        "alt": ""
+      },
+      "date": {
+        "day": "24.09",
+        "year": "2024"
+      },
+      "title": "своя детская площадка около каждого дома",
+      "url": "/detail-news.html"
+    },
+    {
+      "image": {
+        "src": "/images/values/image-4.jpg",
+        "alt": ""
+      },
+      "date": {
+        "day": "15.09",
+        "year": "2024"
+      },
+      "title": "Различные виды отделки квартир: обзор популярных вариантов",
+      "url": "/detail-news.html"
+    },
+    {
+      "image": {
+        "src": "/images/values/image-1.jpg",
+        "alt": ""
+      },
+      "date": {
+        "day": "01.09",
+        "year": "2024"
+      },
+      "title": "Современные качественные материалы для отделки квартиры: выбор и преимущества",
+      "url": "/detail-news.html"
+    }
+  ]
+}

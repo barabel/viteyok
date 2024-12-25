@@ -1,0 +1,126 @@
+{
+  "found": "13 вариантов",
+  "total": 13,
+  "items": [
+    {
+      "bank": {
+        "title": "ВТБ",
+        "image": {
+          "src": "/images/detail-flat/mortgage/vtb.png",
+          "alt": "/"
+        }
+      },
+      "tag": {
+        "title": "Стандартная"
+      },
+      "items": [
+        {
+          "title": "Ставка",
+          "value": "18%"
+        },
+        {
+          "title": "Перв. взнос",
+          "value": "1 000 000 ₽"
+        },
+        {
+          "title": "Срок ипотеки",
+          "value": "30 лет"
+        }
+      ],
+      "price": "134 867 ₽/мес",
+      "button": {
+        "title": "Заявка"
+      }
+    },
+    {
+      "bank": {
+        "title": "Альфа Банк",
+        "image": {
+          "src": "/images/detail-flat/mortgage/alfa.png",
+          "alt": "/"
+        }
+      },
+      "tag": {
+        "title": "Стандартная"
+      },
+      "items": [
+        {
+          "title": "Ставка",
+          "value": "18%"
+        },
+        {
+          "title": "Перв. взнос",
+          "value": "1 000 000 ₽"
+        },
+        {
+          "title": "Срок ипотеки",
+          "value": "30 лет"
+        }
+      ],
+      "price": "134 867 ₽/мес",
+      "button": {
+        "title": "Заявка"
+      }
+    },
+    {
+      "bank": {
+        "title": "Дом РФ",
+        "image": {
+          "src": "/images/detail-flat/mortgage/domrf.png",
+          "alt": "/"
+        }
+      },
+      "tag": {
+        "title": "Стандартная"
+      },
+      "items": [
+        {
+          "title": "Ставка",
+          "value": "18%"
+        },
+        {
+          "title": "Перв. взнос",
+          "value": "1 000 000 ₽"
+        },
+        {
+          "title": "Срок ипотеки",
+          "value": "30 лет"
+        }
+      ],
+      "price": "134 867 ₽/мес",
+      "button": {
+        "title": "Заявка"
+      }
+    },
+    {
+      "bank": {
+        "title": "Совкомбанк",
+        "image": {
+          "src": "/images/detail-flat/mortgage/sov.png",
+          "alt": "/"
+        }
+      },
+      "tag": {
+        "title": "Стандартная"
+      },
+      "items": [
+        {
+          "title": "Ставка",
+          "value": "18%"
+        },
+        {
+          "title": "Перв. взнос",
+          "value": "1 000 000 ₽"
+        },
+        {
+          "title": "Срок ипотеки",
+          "value": "30 лет"
+        }
+      ],
+      "price": "134 867 ₽/мес",
+      "button": {
+        "title": "Заявка"
+      }
+    }
+  ]
+}

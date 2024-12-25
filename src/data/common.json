@@ -1,0 +1,199 @@
+{
+  "header": {
+    "phone": "+7 945 145 14 96",
+    "button": {
+      "title": "Оставить заявку",
+      "callback": {
+        "title": "Заполните форму, чтобы менеджер смог ответить на ваши вопросы",
+        "description": "Мы перезвоним вам через 10 минут",
+        "image": {
+          "src": "/images/callback/background.png",
+          "alt": "/"
+        },
+        "form": {
+          "action": "api/form/callback",
+          "inputs": [
+            {
+              "type": "input",
+              "name": "name",
+              "placeholder": "Ваше имя*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            },
+            {
+              "type": "phone",
+              "name": "phone",
+              "placeholder": "+7 (__)__-__-__*",
+              "errorMessages": {
+                "required": "Поле обязательно для заполнения",
+                "regexFail": "Ошибка заполнения"
+              },
+              "rules": {
+                "required": true
+              }
+            }
+          ],
+          "politics": {
+            "text": "Нажимая на кнопку «Отправить», вы соглашаетесь",
+            "link": {
+              "url": "/politics.html",
+              "title": "с политикой конфиденциальности"
+            }
+          },
+          "button": "Отправить"
+        }
+      }
+    },
+    "menu": {
+      "navigation": [
+        [
+          {
+            "title": "Выбрать квартиру",
+            "subnav": [
+              {
+                "title": "на генплане",
+                "url": "/genplan.html"
+              },
+              {
+                "title": "по параметрам",
+                "url": "/catalog.html"
+              },
+              {
+                "title": "по предпочтениям",
+                "isQuiz": true
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "О проекте",
+            "url": "/about.html"
+          },
+          {
+            "title": "Окружение",
+            "url": "/locations.html"
+          },
+          {
+            "title": "Благоустройство",
+            "url": "/landscaping.html"
+          },
+          {
+            "title": "Интерьерные решения",
+            "url": "/interior.html"
+          },
+          {
+            "title": "Условия покупки",
+            "url": "/mortgage.html"
+          },
+          {
+            "title": "Акции",
+            "url": "/sales.html"
+          },
+          {
+            "title": "Новости",
+            "url": "/news.html"
+          },
+          {
+            "title": "Ход строительства",
+            "url": "/construction-progress.html"
+          },
+          {
+            "title": "Контакты",
+            "url": "/contacts.html"
+          },
+          {
+            "title": "Документы",
+            "url": "/docs.html"
+          }
+        ]
+      ],
+      "phone": "+7 945 145 14 96",
+      "socials": [
+        {
+          "src": "/images/icon/vk.svg",
+          "url": "/"
+        },
+        {
+          "src": "/images/icon/tg.svg",
+          "url": "/"
+        }
+      ],
+      "button": {
+        "title": "Оставить заявку",
+        "callback": {
+          "title": "Заполните форму, чтобы менеджер смог ответить на ваши вопросы",
+          "description": "Мы перезвоним вам через 10 минут",
+          "image": {
+            "src": "/images/callback/background.png",
+            "alt": "/"
+          },
+          "form": {
+            "action": "api/form/callback",
+            "inputs": [
+              {
+                "type": "input",
+                "name": "name",
+                "placeholder": "Ваше имя*",
+                "errorMessages": {
+                  "required": "Поле обязательно для заполнения"
+                },
+                "rules": {
+                  "required": true
+                }
+              },
+              {
+                "type": "phone",
+                "name": "phone",
+                "placeholder": "+7 (__)__-__-__*",
+                "errorMessages": {
+                  "required": "Поле обязательно для заполнения",
+                  "regexFail": "Ошибка заполнения"
+                },
+                "rules": {
+                  "required": true
+                }
+              }
+            ],
+            "politics": {
+              "text": "Нажимая на кнопку «Отправить», вы соглашаетесь",
+              "link": {
+                "url": "/politics.html",
+                "title": "с политикой конфиденциальности"
+              }
+            },
+            "button": "Отправить"
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "phone": "+7 945 145 14 96",
+    "email": "pavlovo@yandex.ru",
+    "socials": [
+      {
+        "src": "/images/icon/vk.svg",
+        "url": "/"
+      },
+      {
+        "src": "/images/icon/tg.svg",
+        "url": "/"
+      }
+    ],
+    "description": "Любая информация, представленная на сайте, не является публичной офертой. Визуализация объекта и планировочные решения являются ориентировочными. Застройщик — ООО «Застройщик», ОГРН 1125555555555, вправе вносить изменения в проект в соответствии с законодательством. Проектная декларация на сайте наш. дом.рф.",
+    "copyright": "© Павлово 3, 2024",
+    "politics": {
+      "title": "Политика конфиденциальности",
+      "url": "/personalData.pdf"
+    },
+    "documents": {
+      "title": "Документы",
+      "url": "/"
+    }
+  }
+}

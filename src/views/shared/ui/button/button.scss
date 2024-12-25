@@ -1,0 +1,168 @@
+@use '~/src/assets/styles/lib/index.scss' as *;
+
+$parent: "button";
+
+@include block($parent) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--button-height, rem(54));
+  min-height: var(--button-height, rem(54));
+  padding: 0 rem(24);
+  border: 1px solid var(--button-border, transparent);
+  border-radius: rem(40);
+  color: var(--button-color, var(--color-beige-100));
+  background-color: var(--button-bg-color, var(--color-green-200));
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover:not([disabled]) {
+      @include element($parent, "content") {
+        transform: translateY(-100%);
+      }
+    }
+  }
+
+  &[disabled] {
+    --button-color: var(--color-grey-200);
+    --button-bg-color: var(--color-grey-100);
+    cursor: auto;
+  }
+
+  @include element($parent, "wrapper") {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  @include element($parent, "content") {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    height: 100%;
+    transform: translateY(0);
+    transition: transform 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+
+    &:nth-child(2) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+
+  @include element($parent, 'wrapper-icon') {
+    width: rem(20);
+    min-width: rem(20);
+    height: rem(20);
+  }
+
+  @include element($parent, 'icon') {
+    width: rem(20);
+    min-width: rem(20);
+    height: rem(20);
+    stroke: var(--button-stroke, var(--color-beige-100));
+    fill: transparent;
+  }
+
+  @include element($parent, 'online') {
+    --button-online-size: #{rem(8)};
+
+    position: absolute;
+    top: 50%;
+    right: rem(29);
+    transform: translateY(-50%);
+    width: var(--button-online-size);
+    min-width: var(--button-online-size);
+    height: var(--button-online-size);
+    border-radius: 50%;
+    animation: beige100Pulse 2s infinite;
+    background-color: var(--button-color, var(--color-beige-100));
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      border-radius: 50%;
+
+      animation: beige100Pulse 2s infinite;
+      animation-delay: 0.5s;
+    }
+  }
+
+  @include modifier($parent, 'beige') {
+    --button-color: var(--color-green-200);
+    --button-bg-color: var(--color-beige-100);
+    --button-stroke: var(--color-green-200);
+  }
+
+  @include modifier($parent, 'bordered') {
+    --button-border: var(--color-green-200-20);
+    --button-bg-color: transparent;
+    --button-color: var(--color-green-200);
+    --button-stroke: var(--color-green-200);
+
+    &[disabled] {
+      --button-color: var(--color-green-200-20);
+    }
+
+    @media (hover: hover) {
+      &:hover:not([disabled]) {
+        --button-border: var(--color-green-200);
+      }
+    }
+  }
+
+  @include modifier($parent, 'bordered-beige') {
+    --button-border: var(--color-beige-100-16);
+    --button-bg-color: transparent;
+    --button-color: var(--color-beige-100);
+    --button-stroke: var(--color-beige-200);
+
+    &[disabled] {
+      --button-color: var(--color-beige-100-16);
+    }
+
+    @media (hover: hover) {
+      &:hover:not([disabled]) {
+        --button-border: var(--color-beige-100);
+      }
+    }
+  }
+
+  @include modifier($parent, 'fill') {
+    @include element($parent, 'icon') {
+      stroke: transparent;
+      fill: var(--button-stroke, var(--color-beige-100));
+    }
+  }
+
+  @include modifier($parent, 'attention') {
+    @include element($parent, 'wrapper-icon') {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: rem(5);
+        height: rem(5);
+        border-radius: 50%;
+        background-color: var(--color-beige-300);
+      }
+    }
+  }
+
+  @include modifier($parent, 'online') {
+    padding-right: rem(52);
+  }
+}
