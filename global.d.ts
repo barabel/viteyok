@@ -24,7 +24,7 @@ declare global {
   module '*.module.scss';
 
   module '*.twig' {
-    import { Template } from 'twig';
+    import type { Template } from 'twig';
 
     const contents: Template;
 

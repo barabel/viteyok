@@ -1,21 +1,15 @@
 {% if data.desktopBig or data.desktop or data.tablet %}
-  {% set attr = 'data-srcset' %}
-
-  {% if noLazy %}
-    {% set attr = 'srcset' %}
-  {% endif %}
-
   <picture class="picture {{ class|default('') }}">
     {% if data.desktopBig %}
-      <source {{ attr }}="{{ data.desktopBig }}" media="(min-width: 1920px)">
+      <source srcset="{{ data.desktopBig }}" media="(min-width: 1920px)">
     {% endif %}
 
     {% if data.desktop %}
-      <source {{ attr }}="{{ data.desktop }}" media="(min-width: 1280px)">
+      <source srcset="{{ data.desktop }}" media="(min-width: 1280px)">
     {% endif %}
 
     {% if data.tablet %}
-      <source {{ attr }}="{{ data.tablet }}" media="(min-width: 768px)">
+      <source srcset="{{ data.tablet }}" media="(min-width: 768px)">
     {% endif %}
 
     {% if data.src %}
