@@ -4,7 +4,7 @@ import twig from '@vituum/vite-plugin-twig';
 import path from 'node:path';
 import IconSpritePlugin from './plugins/vite-plugin-icon-sprite';
 import { getFileName, getGlobalData, twigJSParams } from './app';
-import twigToJS from './plugins/twigtojs';
+import twigToJS from 'vite-plugin-twig-drupal';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
