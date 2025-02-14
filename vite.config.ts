@@ -3,7 +3,7 @@ import vituum from 'vituum';
 import twig from '@vituum/vite-plugin-twig';
 import path from 'node:path';
 import IconSpritePlugin from './plugins/vite-plugin-icon-sprite';
-import { getFileName, twigJSParams } from './app';
+import { getFileName, twigJSParams, twigJSParamsForTwigToJS } from './app';
 import twigToJS from 'vite-plugin-twig-drupal';
 
 export default defineConfig(({ mode }) => {
@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => {
       }),
       IconSpritePlugin(),
       twigToJS({
-        ...twigJSParams,
+        ...twigJSParamsForTwigToJS,
       }),
     ],
     publicDir: 'static',
@@ -53,9 +53,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      manifest: false,
-      assetsInlineLimit: 0,
-      modulePreload: false,
+      manifest: true,
+      assetsInlineLimit: 1,
+      modulePreload: true,
       rollupOptions: {
         input: [
           './src/views/*.twig',
